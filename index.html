@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Easy Products</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f7ff;
+    padding:20px;
+}
+
+h1{
+    text-align:center;
+    color:#0066ff;
+    margin-bottom:30px;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.product{
+    display:flex;
+    align-items:center;
+    background:#fff;
+    border-radius:18px;
+    padding:15px;
+    margin:15px auto;
+    max-width:550px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.25s;
+    cursor:pointer;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+}
+
+.product img{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    object-fit:cover;
+    margin-right:18px;
+}
+
+.product h2{
+    color:#222;
+    margin-bottom:5px;
+}
+
+.product p{
+    color:#666;
+}
+</style>
+</head>
+<body>
+
+<h1>Easy Products</h1>
+
+<!-- Easy Browser -->
+<a href="https://varunkoneri.github.io/Easy-broswer/" target="_blank">
+    <div class="product">
+        <img src="easy-browser.png" alt="Easy Browser">
+        <div>
+            <h2>Easy Browser</h2>
+            <p>Fast • Smart • Secure</p>
+        </div>
+    </div>
+</a>
+
+<!-- Easy Map -->
+<a href="https://varunkoneri.github.io/Easy-map/" target="_blank">
+    <div class="product">
+        <img src="easy-map.png" alt="Easy Map">
+        <div>
+            <h2>Easy Map</h2>
+            <p>Explore the World</p>
+        </div>
+    </div>
+</a>
+
+<!-- Easy Weather -->
+<div class="product">
+    <img src="easy-weather.png" alt="Easy Weather">
+    <div>
+        <h2>Easy Weather</h2>
+        <p>Coming Soon</p>
+    </div>
+</div>
+
+</body>
+</html>
