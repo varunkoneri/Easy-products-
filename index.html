@@ -4,188 +4,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Easy Products</title>
-<!-- =========================
-     Feedback Section
-========================= -->
 
-<section class="feedback">
-    <h2>💬 Report a Problem</h2>
-
-    <p>
-        Found a bug, error, or have a suggestion? Let us know below.
-        Your feedback helps us improve Easy Products.
-    </p>
-
-    <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
-
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required>
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Your Email (optional)">
-
-        <textarea
-            name="message"
-            rows="6"
-            placeholder="Describe the problem or suggestion..."
-            required></textarea>
-
-        <button type="submit">Send Feedback</button>
-
-    </form>
-</section>
-
-<style>
-.feedback{
-    max-width:700px;
-    margin:60px auto;
-    background:#fff;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-}
-
-.feedback h2{
-    color:#0066ff;
-    margin-bottom:10px;
-}
-
-.feedback p{
-    color:#666;
-    margin-bottom:20px;
-}
-
-.feedback input,
-.feedback textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    font-size:16px;
-    outline:none;
-}
-
-.feedback input:focus,
-.feedback textarea:focus{
-    border-color:#0066ff;
-}
-
-.feedback button{
-    width:100%;
-    padding:15px;
-    border:none;
-    background:#0066ff;
-    color:#fff;
-    font-size:18px;
-    border-radius:12px;
-    cursor:pointer;
-}
-
-.feedback button:hover{
-    background:#0052cc;
-}
-</style>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f4f7ff;
-    padding:20px;
-}
-
-h1{
-    text-align:center;
-    color:#0066ff;
-    margin-bottom:30px;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-.product{
-    display:flex;
-    align-items:center;
-    background:#fff;
-    border-radius:18px;
-    padding:15px;
-    margin:15px auto;
-    max-width:550px;
-    box-shadow:0 5px 15px rgba(0,0,0,.12);
-    transition:.25s;
-    cursor:pointer;
-}
-
-.product:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 20px rgba(0,0,0,.18);
-}
-
-.product img{
-    width:70px;
-    height:70px;
-    border-radius:18px;
-    object-fit:cover;
-    margin-right:18px;
-}
-
-.product h2{
-    color:#222;
-    margin-bottom:5px;
-}
-
-.product p{
-    color:#666;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Easy Products</h1>
+<header>
+    <h1>Easy Products</h1>
+    <p>All Easy Apps in One Place</p>
 
-<!-- Easy Browser -->
-<a href="https://varunkoneri.github.io/Easy-broswer/" target="_blank">
-    <div class="product">
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Easy Apps..."
+    >
+</header>
+
+<main id="products">
+
+    <!-- Easy Browser -->
+    <a class="card"
+       href="https://varunkoneri.github.io/Easy-broswer/"
+       target="_blank">
+
         <img src="easy-browser.png" alt="Easy Browser">
-        <div>
+
+        <div class="info">
             <h2>Easy Browser</h2>
             <p>Fast • Smart • Secure</p>
         </div>
-    </div>
-</a>
 
-<!-- Easy Map -->
-<a href="https://varunkoneri.github.io/Easy-map/" target="_blank">
-    <div class="product">
+    </a>
+
+    <!-- Easy Map -->
+    <a class="card"
+       href="https://varunkoneri.github.io/Easy-map/"
+       target="_blank">
+
         <img src="easy-map.png" alt="Easy Map">
-        <div>
+
+        <div class="info">
             <h2>Easy Map</h2>
             <p>Explore the World</p>
         </div>
-    </div>
-</a>
 
-<!-- Easy Weather -->
-<div class="product">
-    <img src="easy-weather.png" alt="Easy Weather">
-    <div>
-        <h2>Easy Weather</h2>
-        <p>Coming Soon</p>
+    </a>
+
+    <!-- Easy Weather -->
+    <div class="card disabled">
+
+        <img src="easy-weather.png" alt="Easy Weather">
+
+        <div class="info">
+            <h2>Easy Weather</h2>
+            <p>Coming Soon</p>
+        </div>
+
     </div>
-</div>
+
+</main>
+
+<!-- Feedback -->
+
+<section class="feedback">
+
+<h2>💬 Report a Problem</h2>
+
+<p>
+Found a bug or have a suggestion?
+Send us your feedback below.
+</p>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email">
+
+<textarea
+placeholder="Describe the problem..."
+rows="6"
+required></textarea>
+
+<button type="submit">
+Send Feedback
+</button>
+
+</form>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
+<h2>About Easy Products</h2>
+
+<p>
+
+<strong>Easy Products</strong> is a collection of web apps created to make everyday tasks easier, faster, and smarter.
+
+</p>
+
+<br>
+
+<p>
+
+Current apps include <strong>Easy Browser</strong>, <strong>Easy Map</strong>, and more apps coming soon.
+
+</p>
+
+<br>
+
+<p>
+
+Easy Products is part of <strong>Easy.Network.India</strong>.
+
+</p>
+
+<br>
+
+<p>
+
+<strong>Founder:</strong> Varun Koneri Ganesh
+
+</p>
+
+<br>
+
+<p>
+
+Our goal is to build free, simple, and useful apps for everyone.
+
+</p>
+
+</section>
+
+<!-- Contact -->
+
+<section class="contact">
+
+<h2>📞 Contact Us</h2>
+
+<p>
+Need help or have a question?
+</p>
+
+<p>
+
+<strong>Phone:</strong>
+
++91 93448 64418
+
+</p>
+
+<p>
+
+Thank you for supporting Easy Products.
+
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Easy Products
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
