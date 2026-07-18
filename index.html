@@ -4,6 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Easy Products</title>
+<!-- =========================
+     Feedback Section
+========================= -->
+
+<section class="feedback">
+    <h2>💬 Report a Problem</h2>
+
+    <p>
+        Found a bug, error, or have a suggestion? Let us know below.
+        Your feedback helps us improve Easy Products.
+    </p>
+
+    <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email (optional)">
+
+        <textarea
+            name="message"
+            rows="6"
+            placeholder="Describe the problem or suggestion..."
+            required></textarea>
+
+        <button type="submit">Send Feedback</button>
+
+    </form>
+</section>
+
+<style>
+.feedback{
+    max-width:700px;
+    margin:60px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.feedback h2{
+    color:#0066ff;
+    margin-bottom:10px;
+}
+
+.feedback p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.feedback input,
+.feedback textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+}
+
+.feedback input:focus,
+.feedback textarea:focus{
+    border-color:#0066ff;
+}
+
+.feedback button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#0066ff;
+    color:#fff;
+    font-size:18px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.feedback button:hover{
+    background:#0052cc;
+}
+</style>
 
 <style>
 *{
